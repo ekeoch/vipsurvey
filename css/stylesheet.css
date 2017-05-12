@@ -1,0 +1,43 @@
+li {
+    margin:0 0 5px 0;
+}
+
+#course, #name, #major, #summary, #official_title{
+    width: 200px;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #cccccc;
+}
+
+#header {
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+}
+
+h2 {
+    text-align: center;
+}
+
+textarea {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+}
