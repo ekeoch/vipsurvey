@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -35,8 +34,8 @@
                             <td width="10%"></td>
                             <td width="80%">
                                 <div align="center"><u>NOTE</u>: Answer the following questions for <u>your own team project</u>.<br><br></div>
-                                <strong>Name</strong>: <input id="name" type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <strong>Major</strong>: <input id="major" type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <strong>Name</strong>: <input id="name" name="name" type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <strong>Major</strong>: <input id="major" name="major" type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <strong>Level</strong> (Sr, Jr, Sp, or Fr): &nbsp;
                                 <select id="year">
                                     <option value="none">none</option>
@@ -160,7 +159,7 @@
                     </table>
 
                     <div class="footer" align="center">
-                        <input type="submit" class="btn btn-default" value="Submit">
+                        <input type="submit" name="submit" class="btn btn-default" value="Submit">
                     </div>
                 </form>
             </td>
