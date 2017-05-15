@@ -1,0 +1,11 @@
+body, button, input, keygen, select, textarea {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+input, select, textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #5e5e5e;
+    font-size: 14px;
+    padding: 8px 10px 5px 10px
+}

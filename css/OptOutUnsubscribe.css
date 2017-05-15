@@ -1,0 +1,212 @@
+body {
+    background-color: #f9f9f9;
+    color: #444;
+    margin: 10px
+}
+
+.optHeader {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center
+}
+
+.confirmAction {
+    border: 1px solid #e9e9e9;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 570px;
+    margin-top: 25px;
+    text-align: center;
+    width: 80%
+}
+
+.confirmAction div {
+    padding: 10px
+}
+
+#mainContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%
+}
+
+h1 {
+    margin: 25px 15% 0 15%;
+    text-align: center;
+    transition: 1s
+}
+
+.thankYouContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    width: 80%
+}
+
+.thankYouContainer span {
+    margin-bottom: 15px
+}
+
+.thankYouContainer a {
+    color: #51a3dc;
+    text-decoration: none
+}
+
+.optOutForm, .thankYouContainer {
+    background-color: #fff;
+    border: 2px solid #e9e9e9;
+    border-radius: 5px;
+    margin: 25px 0;
+    max-width: 570px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%
+}
+
+.optOutForm form, .thankYouContainer form {
+    margin: 25px 60px;
+    transition: 1s
+}
+
+.optionsHeader {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.optOutOption {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.submitForm {
+    margin-top: 25px;
+    text-align: center
+}
+
+#submit {
+    background-color: #51a3dc;
+    border-color: #51a3dc;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 27px;
+    padding: 0 20px
+}
+
+.rejoin {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center
+}
+
+.rejoin a {
+    color: #4dc4ff;
+    text-decoration: none
+}
+
+.branding {
+    margin: 15px auto auto auto;
+    text-align: center;
+    width: 103px
+}
+
+.optionLabel {
+    display: inline-block;
+    flex: 1
+}
+
+.logoContainer {
+    margin-top: 50px;
+    width: 100%
+}
+
+.otherTextArea {
+    height: 100px;
+    width: 100%
+}
+
+.logoContainer img {
+    max-width: 90%
+}
+
+#submit, textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+.updateForm label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px
+}
+
+.updateForm input {
+    display: block;
+    clear: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column
+}
+
+.selectWrapper select {
+    background-color: #fff;
+    height: 35px;
+    margin: 0 0 10px 0
+}
+
+.eitherOptOut {
+    margin-top: 15px
+}
+
+.eitherOptOut a {
+    color: #51a3dc;
+    text-decoration: none
+}
+
+.optOutOption .optionLabel {
+    padding-left: 5px
+}
+
+@media only screen and (max-width: 768px) {
+    .confirmAction, .optOutForm, .thankYouContainer {
+        width: 100%
+    }
+
+    .optOutForm form, .thankYouContainer form {
+        margin: 20px
+    }
+
+    h1 {
+        font-size: 1.3em
+    }
+}
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column
+}
+
+.selectWrapper select {
+    flex-direction: initial;
+    background-color: #fff;
+    height: 35px;
+    margin: 0 0 10px 0
+}
