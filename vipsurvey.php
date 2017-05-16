@@ -22,7 +22,7 @@
 
     <table>
         <tr>
-            <td width="10%" style="background-color: #efefef;"></td>
+            <td width="10%"></td>
             <td width="80%">
                 <div id="header">
                     <h2>SURVEY VIP(Vertically Integrated Projects)</h2>
@@ -190,12 +190,16 @@
                                         2<sup>nd</sup> month (&nbsp;<input id="fun_2" name="fun_2" type="number" min="1"
                                                                            max="10">&nbsp;) – 3<sup>rd</sup>
                                         month (&nbsp;<input id="fun_3" name="fun_3" type="number" min="1" max="10">&nbsp;)
+                                        - 4<sup>th</sup>
+                                        month (&nbsp;<input id="fun_4" name="fun_4" type="number" min="1" max="10">&nbsp;)
                                         <br><br>Pain: 1<sup>st</sup> month (&nbsp;<input id="pain_1" name="pain_1"
                                                                                          type="number" min="1" max="10"
                                                                                          required>&nbsp;) –
                                         2<sup>nd</sup> month (&nbsp;<input id="pain_2" name="pain_2" type="number"
                                                                            min="1" max="10">&nbsp;) – 3<sup>rd</sup>
                                         month (&nbsp;<input id="pain_3" name="pain_3" type="number" min="1" max="10">&nbsp;)
+                                        - 4<sup>th</sup>
+                                        month (&nbsp;<input id="pain_4" name="pain_4" type="number" min="1" max="10">&nbsp;)
                                     </li>
 
                                     <li>If you condense (or boil down) your experience of the team project to just one
@@ -261,7 +265,7 @@
                     });
                 </script>
             </td>
-            <td width="10%" style="background-color: #efefef;"></td>
+            <td width="10%"></td>
         </tr>
     </table>
 </div>

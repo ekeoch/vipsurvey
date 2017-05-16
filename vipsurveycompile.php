@@ -33,18 +33,18 @@ $ss_12 = isset($_POST['ss_12']) ? $_POST['ss_12'] : null; #Understaning what eng
 
 $ss_array = array();
 
-!empty($ss_1) ? array_push($ss_array,$ss_1) : null;
-!empty($ss_2) ? array_push($ss_array,$ss_2) : null;
-!empty($ss_3) ? array_push($ss_array,$ss_3) : null;
-!empty($ss_4) ? array_push($ss_array,$ss_4) : null;
-!empty($ss_5) ? array_push($ss_array,$ss_5) : null;
-!empty($ss_6) ? array_push($ss_array,$ss_6) : null;
-!empty($ss_7) ? array_push($ss_array,$ss_7) : null;
-!empty($ss_8) ? array_push($ss_array,$ss_8) : null;
-!empty($ss_9) ? array_push($ss_array,$ss_9) : null;
-!empty($ss_10) ? array_push($ss_array,$ss_10) : null;
-!empty($ss_11) ? array_push($ss_array,$ss_11) : null;
-!empty($ss_12) ? array_push($ss_array,$ss_12) : null;
+!empty($ss_1) ? array_push($ss_array,1) : null;
+!empty($ss_2) ? array_push($ss_array,2) : null;
+!empty($ss_3) ? array_push($ss_array,3) : null;
+!empty($ss_4) ? array_push($ss_array,4) : null;
+!empty($ss_5) ? array_push($ss_array,5) : null;
+!empty($ss_6) ? array_push($ss_array,6) : null;
+!empty($ss_7) ? array_push($ss_array,7) : null;
+!empty($ss_8) ? array_push($ss_array,8) : null;
+!empty($ss_9) ? array_push($ss_array,9) : null;
+!empty($ss_10) ? array_push($ss_array,10) : null;
+!empty($ss_11) ? array_push($ss_array,11) : null;
+!empty($ss_12) ? array_push($ss_array,12) : null;
 
 #mentorship ratings
 $faculty_advisor = isset($_POST['f_advisor']) ? $_POST['f_advisor'] : null;
@@ -66,6 +66,9 @@ $fun_2 = empty($fun_2) ? "N/A" : $fun_2;
 $fun_3 = isset($_POST['fun_3']) ? $_POST['fun_3'] : null;
 $fun_3 = empty($fun_3) ? "N/A" : $fun_3;
 
+$fun_4 = isset($_POST['fun_4']) ? $_POST['fun_4'] : null;
+$fun_4 = empty($fun_4) ? "N/A" : $fun_4;
+
 $pain_1 = isset($_POST['pain_1']) ? $_POST['pain_1'] : null;
 $pain_1 = empty($pain_1) ? "N/A" : $pain_1;
 
@@ -75,48 +78,52 @@ $pain_2 = empty($pain_2) ? "N/A" : $pain_2;
 $pain_3 = isset($_POST['pain_3']) ? $_POST['pain_3'] : null;
 $pain_3 = empty($pain_3) ? "N/A" : $pain_3;
 
+$pain_4 = isset($_POST['pain_4']) ? $_POST['pain_4'] : null;
+$pain_4 = empty($pain_4) ? "N/A" : $pain_4;
+
 $summary = isset($_POST['summary']) ? $_POST['summary'] : null;
 
 ob_start();
 echo "<page backtop='7mm' backbottom='7mm' backleft='10mm' backright='10mm'>";
-echo "<div >SURVEY                                                                 VIP (Vertically Integrated Projects) 	   <br><br></div>";
+echo "<div align='center'><img src='images/howard_pic.jpg' style='width:169px;height:200px;'><br><br></div>";
+echo "<div align='center'>SURVEY                                                                 VIP (Vertically Integrated Projects) 	   <br><br></div>";
 echo "<div align='center'><u>NOTE</u>: Answer the following questions for <u>your own team project</u>.<br><br></div>";
 echo "<div align='center'>";
-echo "<strong>Name</strong>: <u> ".$name." </u>&nbsp;&nbsp;";
-echo "<strong>Major</strong>: <u> ".$major." </u>&nbsp;&nbsp;";
-echo "<strong>Level</strong> (Sr, Jr, Sp, or Fr): <u> ".$year." </u>&nbsp;<br></div>";
-echo "<ol>";
-echo "<li>Today’s Date:&nbsp; <u><strong> ".$date."&nbsp;</strong></u><br></li>";
-echo "<li>This semester is my (<u><strong>".$semester."</strong></u>) [1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>, 4<sup>th</sup>, etc] semester with this team project.</li>";
-echo "<li>Briefly explain why you chose this team project?<br><textarea rows='5' cols='60'><strong>".$project_reason."</strong></textarea></li>";
-echo "<li>What is the <strong><u>official title</u></strong> of your team project?&nbsp;<u> <strong>".$official_title."</strong> </u></li>";
-echo "<li>What new <strong>technical skills and knowledge</strong> have you learned from your team project?<br><textarea rows='5' cols='60'><strong>".$tech_skills."</strong></textarea></li>";
-echo "<li>Choose from below five (5) valuable <strong>soft skills</strong> you have gainedby being a member of your team: <br>[(<strong>".$ss_array[0]."</strong>)(<strong>".$ss_array[1]."</strong>)(<strong>".$ss_array[2]."</strong>)(<strong>".$ss_array[3]."</strong>)(<strong>".$ss_array[3]."</strong>)(<strong>".$ss_array[4]."</strong>)]<br><br>
+echo "<strong>Name</strong>: <u> ".$name."   </u>&nbsp;&nbsp;";
+echo "<strong>Major</strong>: <u> ".$major."   </u>&nbsp;&nbsp;";
+echo "<strong>Level</strong> (Sr, Jr, Sp, or Fr): <u> ".$year." </u>&nbsp;<br><br></div>";
+echo "<div>";
+echo "1. Today’s Date:&nbsp; <u><strong> ".$date."&nbsp;</strong></u><br><br>";
+echo "2. This semester is my ( <u><strong>".$semester."</strong></u> ) [1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>, 4<sup>th</sup>, etc] semester with this team project.";
+echo "3. Briefly explain why you chose this team project?<br><strong>".$project_reason."</strong><br><br>";
+echo "4. What is the <strong><u>official title</u></strong> of your team project?&nbsp;<u> <strong>".$official_title."</strong> </u><br><br>";
+echo "5. What new <strong>technical skills and knowledge</strong> have you learned from your team project?<br><strong>".$tech_skills."</strong><br><br>";
+echo "6. Choose from below five (5) valuable <strong>soft skills</strong> you have gainedby being a member of your team: <br>[(<strong> ".$ss_array[0]." </strong>)(<strong> ".$ss_array[1]." </strong>)(<strong> ".$ss_array[2]." </strong>)(<strong> ".$ss_array[3]." </strong>)(<strong> ".$ss_array[4]." </strong>)]<br><br>
 <strong>1</strong> Problem solving skills, <strong>2</strong> Teamwork, <strong>3</strong> Interpersonal communication, <strong>4</strong> Public speaking and related skills,<br>
 <strong>5</strong> Personal responsibility, <strong>6</strong> Time management, <strong>7</strong> Information search, <strong>8</strong> Self-learning skills of new subjects,<br>
 <strong>9</strong> Awareness of research and research technique, <strong>10</strong> Understanding contemporary technology,<br>
-<strong>11</strong> Working in a multidisciplinary team environment, <strong>12</strong> Understanding what engineering design is about.<br></li>";
-echo "<li>In terms of <strong>mentorship </strong>by advisors, graduate students, and peers, please indicate the degree to which you have directly benefited. (Make the total 100%)<br><br>
-Faculty advisor (<strong>".$faculty_advisor."</strong>) % Graduate students [or project manager] (<strong>".$grad_student."</strong>) % Peers [i.e., team members] (<strong>".$peers."</strong>) %<br></li>";
-echo "<li>How would you do differently in your team project to enjoy and experience more of the team work and to make more contribution?<br><textarea rows='5' cols='60'><strong>".$contribution."</strong></textarea></li>";
-echo "<li>Are you going to continue to work for this project next semester? <u><strong> ".$continue." </strong></u></li>";
-echo "<li>By participation of VIP project, are you earning credit(s) for a course? (<strong>".$earning_credit."</strong>) If yes, please name the title of the course and credit hour(s). <u><strong> ".$course." </strong></u></li>";
-echo "<li>As you move from the first day of team participation to the present day of semester end, your may have 
+<strong>11</strong> Working in a multidisciplinary team environment, <strong>12</strong> Understanding what engineering design is about.<br><br>";
+echo "6. In terms of <strong>mentorship </strong>by advisors, graduate students, and peers, please indicate the degree to which you have directly benefited. (Make the total 100%)<br><br>
+Faculty advisor (<strong>".$faculty_advisor."</strong>) % Graduate students [or project manager] (<strong>".$grad_student."</strong>) % Peers [i.e., team members] (<strong>".$peers."</strong>) %<br><br>";
+echo "7. How would you do differently in your team project to enjoy and experience more of the team work and to make more contribution?<br><strong>".$contribution."</strong><br><br>";
+echo "8. Are you going to continue to work for this project next semester? <u><strong> ".$continue." </strong></u><br><br>";
+echo "9. By participation of VIP project, are you earning credit(s) for a course? (<strong>".$earning_credit."</strong>) If yes, please name the title of the course and credit hour(s). <u><strong> ".$course." </strong></u><br><br>";
+echo "10. As you move from the first day of team participation to the present day of semester end, your may have 
 experienced the joy (or confusion/agony) of learning and fun in team environment.  Indicate (a)the intensity in the 
 scale of 1(Lowest) – 10 (Highest) of the <u>Fun (joy)</u>, and (b) the intensity of the <u>Pain (confusion and/or agony)</u> for
 the first month, second, and the last month.<br>
 (Example1:  Fun: 1<sup>st</sup> month (2) – 2<sup>nd</sup> month (3) – 3<sup>rd</sup> month (7); Pain: 1<sup>st</sup> month (7) – 2<sup>nd</sup> month (2) – 3<sup>rd</sup> month (1))<br><br>
-Fun: 1<sup>st</sup> month (<strong>".$fun_1."</strong>) – 2<sup>nd</sup> month (<strong>".$fun_2."</strong>) – 3<sup>rd</sup> month (<strong>".$fun_3."</strong>)<br> 
-Pain: 1<sup>st</sup> month (<strong>".$pain_1."</strong>) – 2<sup>nd</sup> month (<strong>".$pain_2."</strong>) – 3<sup>rd</sup> month (<strong>".$pain_3."</strong>)</li>";
-echo "<li>If you condense (or boil down) your experience of the team project to just one word, it would be:<br>
-\"<u><strong> ".$summary." </strong></u>\"</li>";
-echo "</ol>";
+Fun: 1<sup>st</sup> month (<strong>".$fun_1."</strong>) – 2<sup>nd</sup> month (<strong>".$fun_2."</strong>) – 3<sup>rd</sup> month (<strong>".$fun_3."</strong>) – 4<sup>th</sup> month (<strong>".$fun_4."</strong>)<br> 
+Pain: 1<sup>st</sup> month (<strong>".$pain_1."</strong>) – 2<sup>nd</sup> month (<strong>".$pain_2."</strong>) – 3<sup>rd</sup> month (<strong>".$pain_3."</strong>) – 4<sup>th</sup> month (<strong>".$pain_4."</strong>)<br><br>";
+echo "11. If you condense (or boil down) your experience of the team project to just one word, it would be:<br>
+\"<u><strong> ".$summary." </strong></u>\"";
+echo "</div>";
 echo "</page>";
 
 $html = ob_get_clean();
 require_once('html2pdf/vendor/autoload.php');
 
-$pdf_name = "surveys/testpdf.pdf";
+$pdf_name = "surveys/".$name." ".$official_title." Survey.pdf";
 
 try {
     $pdf = new HTML2PDF('P', 'A4', 'en');
@@ -125,9 +132,10 @@ try {
     $myfile = fopen($pdf_name, "w") or die("Unable to open file!");
     fwrite($myfile, $attachment);
     fclose($myfile);
+    header("Location: thanks.php");
     exit;
 } catch (HTML2PDF_exception $exception) {
-    echo "Error: " . $exception;
+    header("Location: thanks.php");
     exit;
 }
 

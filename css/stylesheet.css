@@ -41,3 +41,20 @@ textarea {
     padding: 1rem;
     background-color: #efefef;
 }
+
+#submit {
+    background-color: #51a3dc;
+    border-color: #51a3dc;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 27px;
+    padding: 0 20px
+}
+
+#dr_kim {
+    border-radius: 4px;
+}
