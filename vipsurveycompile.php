@@ -124,7 +124,6 @@ $html = ob_get_clean();
 require_once('html2pdf/vendor/autoload.php');
 
 $pdf_path = "surveys/".date("mdY")."/";
-
 try {
     mkdir($pdf_path);
 } catch (Exception $exception) {
