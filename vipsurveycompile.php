@@ -123,15 +123,9 @@ echo "</page>";
 $html = ob_get_clean();
 require_once('html2pdf/vendor/autoload.php');
 
-$pdf_path = "surveys/".date("mdY")."/";
-try {
-    mkdir($pdf_path);
-} catch (Exception $exception) {
-    $pdf_path = "surveys/";
-}
+$pdf_path = "surveys/";
 
-
-$pdf_name = $pdf_path.$name." ".$official_title." Survey.pdf";
+$pdf_name = $pdf_path.$name." ".$official_title." Survey ".date("mdY").".pdf";
 
 try {
     $pdf = new HTML2PDF('P', 'A4', 'en');

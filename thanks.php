@@ -23,7 +23,7 @@
                 <td width="80%" style="padding-right: 10px;">
                     Thank you for participating in Howard University's Vertically Integrated Projects this Semester!<br><br>
                     We also appreciate the time to took to provide feedback on this endeavor.<br><br>
-                    Take a moment to preview other <a href="">VIP projects</a> that are also in the works.<br><br>
+                    Take a moment to preview other <a href="http://www.mwftr.com/VIPatHOWARD.html">VIP projects</a> that are also in the works.<br><br>
                     <div align="center">Thanks!</div>
                 </td>
             </tr>
